@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HuntIT</string>
+    <string name="choose_date">Выбрать дату</string>
+    <string name="events">События</string>
+    <string name="move_to_site">Перейти на сайт</string>
+    <string name="continue_in_app">Продолжить в приложении</string>
+</resources>

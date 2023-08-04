@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- Date, Time, and Duration of the match at the top -->
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tvDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="12dp"
+        android:textSize="15sp" />
+
+    <!-- Divide layout in half horizontally using RelativeLayout -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Left club details -->
+        <LinearLayout
+            android:id="@+id/llLeftClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="50dp"
+            android:layout_toStartOf="@id/llRightClub"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Club Image -->
+            <ImageView
+                android:id="@+id/ivLeftClubImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <!-- Club Code -->
+            <TextView
+                android:id="@+id/tvLeftClubCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Club Form -->
+            <TextView
+                android:id="@+id/tvLeftClubForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Right club details -->
+        <LinearLayout
+            android:id="@+id/llRightClub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="50dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Club Image -->
+            <ImageView
+                android:id="@+id/ivRightClubImage"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <!-- Club Code -->
+            <TextView
+                android:id="@+id/tvRightClubCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!-- Club Form -->
+            <TextView
+                android:id="@+id/tvRightClubForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
